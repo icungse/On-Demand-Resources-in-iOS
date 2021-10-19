@@ -166,6 +166,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
           message: "There was a problem",
           preferredStyle: .alert)
         
+        switch error.code {
+        case NSBundleOnDemandResourceOutOfSpaceError:
+          controller.message = "You don't have enough space available to download this resource."
+        case NSBundleOnDemandResourceExceededMaximumSizeError:
+          controller.message = "The bundle resource was too big."
+        case NSBundleOnDemandResourceInvalidTagError:
+          controller.message = "The requested tag does not exist."
+        default:
+          controller.message = error.description
+        }
+        
         controller.addAction(UIAlertAction(title: "Dismiss", style: .default))
         guard let rootViewController = self.view?.window?.rootViewController else {
           return
