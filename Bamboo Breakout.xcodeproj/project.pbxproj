@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		311706721E82F25500A79E47 /* LevelOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311706711E82F25500A79E47 /* LevelOver.swift */; };
-		31B179C61E7DE96B00E10BB3 /* GameScene3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179C11E7DE96B00E10BB3 /* GameScene3.sks */; };
-		31B179C71E7DE96B00E10BB3 /* GameScene4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179C21E7DE96B00E10BB3 /* GameScene4.sks */; };
-		31B179C81E7DE96B00E10BB3 /* GameScene5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179C31E7DE96B00E10BB3 /* GameScene5.sks */; };
-		31B179C91E7DE96B00E10BB3 /* GameScene6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179C41E7DE96B00E10BB3 /* GameScene6.sks */; };
-		31B179D71E804BB600E10BB3 /* GameScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179D61E804BB600E10BB3 /* GameScene2.sks */; };
+		31B179C61E7DE96B00E10BB3 /* GameScene3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179C11E7DE96B00E10BB3 /* GameScene3.sks */; settings = {ASSET_TAGS = (level3, ); }; };
+		31B179C71E7DE96B00E10BB3 /* GameScene4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179C21E7DE96B00E10BB3 /* GameScene4.sks */; settings = {ASSET_TAGS = (level4, ); }; };
+		31B179C81E7DE96B00E10BB3 /* GameScene5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179C31E7DE96B00E10BB3 /* GameScene5.sks */; settings = {ASSET_TAGS = (level5, ); }; };
+		31B179C91E7DE96B00E10BB3 /* GameScene6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179C41E7DE96B00E10BB3 /* GameScene6.sks */; settings = {ASSET_TAGS = (level6, ); }; };
+		31B179D71E804BB600E10BB3 /* GameScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31B179D61E804BB600E10BB3 /* GameScene2.sks */; settings = {ASSET_TAGS = (level2, ); }; };
 		F572800F1CC04F1D00D87266 /* BallTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = F572800D1CC04F1D00D87266 /* BallTrail.sks */; };
 		F57280101CC04F1D00D87266 /* BrokenPlatform.sks in Resources */ = {isa = PBXBuildFile; fileRef = F572800E1CC04F1D00D87266 /* BrokenPlatform.sks */; };
 		F577B38F1CB81F840005E827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577B38E1CB81F840005E827 /* AppDelegate.swift */; };
@@ -170,6 +170,13 @@
 		F577B3831CB81F840005E827 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					level2,
+					level3,
+					level4,
+					level5,
+					level6,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Razeware LLC.";
@@ -185,6 +192,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
