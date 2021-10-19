@@ -151,14 +151,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
       
     case is LevelOver:
       
-      if let newScene = GameScene(fileNamed: "GameScene\(self.nextLevel)") {
+      ODRManager.shared.requestSceneWith(tag: "level\(nextLevel)", onSuccess: {
+        guard let newScene = GameScene(fileNamed: "GameScene\(self.nextLevel)") else {
+          return
+        }
         
         newScene.scaleMode = .aspectFit
         newScene.nextLevel = self.nextLevel + 1
         let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
         self.view?.presentScene(newScene, transition: reveal)
-      }
-
+      }, onFailure: { (error) in
+        let controller = UIAlertController(
+          title: "Error",
+          message: "There was a problem",
+          preferredStyle: .alert)
+        
+        controller.addAction(UIAlertAction(title: "Dismiss", style: .default))
+        guard let rootViewController = self.view?.window?.rootViewController else {
+          return
+        }
+        
+        rootViewController.present(controller, animated: true)
+      })
+      
     case is GameOver:
       
       if let newScene = GameScene(fileNamed:"GameScene1") {
