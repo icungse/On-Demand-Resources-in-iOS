@@ -21,6 +21,7 @@ class ODRManager {
       return
     }
     
+    requset.loadingPriority = NSBundleResourceRequestLoadingPriorityUrgent
     requset.beginAccessingResources { (error: Error?) in
       if let error = error {
         onFailure(error as NSError)
