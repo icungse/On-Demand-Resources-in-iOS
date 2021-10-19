@@ -30,6 +30,7 @@
 		F577B3B91CB8210A0005E827 /* paddleBlip.wav in Resources */ = {isa = PBXBuildFile; fileRef = F577B3B41CB8210A0005E827 /* paddleBlip.wav */; };
 		F577B3BA1CB8210A0005E827 /* pongblip.wav in Resources */ = {isa = PBXBuildFile; fileRef = F577B3B51CB8210A0005E827 /* pongblip.wav */; };
 		F5E52DDF1CC19C9300FB5F61 /* BambooBreak.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5E52DDE1CC19C9300FB5F61 /* BambooBreak.wav */; };
+		FEE1B3A2271F046B007262B5 /* ODRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1B3A1271F046B007262B5 /* ODRManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		F577B3B41CB8210A0005E827 /* paddleBlip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = paddleBlip.wav; sourceTree = "<group>"; };
 		F577B3B51CB8210A0005E827 /* pongblip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pongblip.wav; sourceTree = "<group>"; };
 		F5E52DDE1CC19C9300FB5F61 /* BambooBreak.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BambooBreak.wav; sourceTree = "<group>"; };
+		FEE1B3A1271F046B007262B5 /* ODRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODRManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				31B179C41E7DE96B00E10BB3 /* GameScene6.sks */,
 				F577B38E1CB81F840005E827 /* AppDelegate.swift */,
 				F577B3941CB81F840005E827 /* GameViewController.swift */,
+				FEE1B3A1271F046B007262B5 /* ODRManager.swift */,
 				F577B3AA1CB820920005E827 /* Game States */,
 				F577B3961CB81F840005E827 /* Main.storyboard */,
 				F577B3991CB81F840005E827 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 				F577B3931CB81F840005E827 /* GameScene.swift in Sources */,
 				F577B3A91CB8208A0005E827 /* WaitingForTap.swift in Sources */,
 				311706721E82F25500A79E47 /* LevelOver.swift in Sources */,
+				FEE1B3A2271F046B007262B5 /* ODRManager.swift in Sources */,
 				F577B3951CB81F840005E827 /* GameViewController.swift in Sources */,
 				F577B38F1CB81F840005E827 /* AppDelegate.swift in Sources */,
 				F577B3A71CB8208A0005E827 /* GameOver.swift in Sources */,
